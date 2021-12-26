@@ -1,4 +1,4 @@
-FROM 2.4.6-builder-alpine AS builder
+FROM caddy:2.4.6-builder-alpine AS builder
 
 RUN xcaddy build \
     --with github.com/RussellLuo/caddy-ext/ratelimit
